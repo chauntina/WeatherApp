@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WeatherApp.MainPage" BackgroundImageSource="image.jpeg" >
+    <StackLayout>
+        <Label Text="Weather" FontSize="50" FontAttributes="Bold" HorizontalOptions="Center" />
+
+
+        <Frame Padding="10" CornerRadius="0">
+            <Label Text="Current Weather" TextColor="Black" FontSize="25"/>
+        </Frame>
+
+        <Label Text="Temperature" FontSize="Medium" TextColor="Black"/>
+        <Label Text="{Binding main.temp}"/>
+        <Label Text="Minimum Temperature" FontSize="Medium" TextColor="Black"/>
+        <Label Text="{Binding main.temp_min}"/>
+        <Label Text="Maximum Temperature" FontSize="Medium" TextColor="Black"/>
+        <Label Text="{Binding main.temp_max}"/>
+        <Label Text="Pressure" FontSize="Medium" TextColor="black"/>
+        <Label Text="{Binding main.pressure}"/>
+        <Label Text="humanity" FontSize="Medium" TextColor="Black"/>
+        <Label Text="{Binding main.humidity}"/>
+        <Label Text="Cloud Cover" FontSize="Medium" TextColor="Black"/>
+        <Label Text="{Binding clouds.all}"/>
+        <Label Text="Wind Speed" FontSize="Medium" TextColor="Black"/>
+        <Label Text="{Binding wind.speed}"/>
+
+
+
+    </StackLayout>
+  
+</ContentPage>
